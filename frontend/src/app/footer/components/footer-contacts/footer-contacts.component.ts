@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './footer-contacts.component.css' ]
 })
 export class FooterContactsComponent {
+  public toggleSpoiler: string = 'inactive';
+
+  public onToggleSpoiler(): void {
+    debugger
+    this.toggleSpoiler = this.toggleSpoiler === 'inactive' ? 'active' : 'inactive';
+  }
 }

@@ -1,0 +1,64 @@
+<div class="background-notebook">
+  <div class="footer-contacts-left"><div class="footer-contacts-container">
+    <div
+      class="footer-contacts-spoiler-button"
+      (click)="onToggleSpoiler()"
+    >
+      <div class="headline border">
+        <div class="icon icon-spoiler footer-contacts-left-icon-spoiler {{ toggleSpoiler }}"></div>
+        <span>Контакты</span>
+      </div>
+    </div>
+    <shared-spoiler [spoilerState]="toggleSpoiler" >
+      <div class="footer-contacts-address">
+        <div class="footer-contacts-address-left">
+          <div class="footer-contacts-address-left-descripton">Московский офис:</div>
+          <a class="ymaps-geolink ymaps-2-1-60-id-0 ymaps-2-1-60-geolink-processed" id="geolink" title="Показать на карте" data-title="Показать на карте" style="color: rgb(0, 68, 187); margin-left: 19px;">109129 г. Москва, ул. 8-я Текстильщиков д.11 стр.2</a>
+        </div>
+        <div class="icon icon-address footer-contacts-icon-address"></div>
+      </div>
+      <div class="footer-contacts-phone">
+        <a href="tel:+74993933371">
+          <div class="address_content">+7 (499) 393 33 71
+            <div class="icon icon-phone footer-contacts-icon-phone"></div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-contacts-email">
+        <a href="mailto:contact@energizes.ru">
+          <div class="address_content">contact@energizes.ru
+            <div class="icon icon-mail footer-contacts-icon-mail"></div>
+          </div>
+        </a>
+      </div>
+      <span class="icon icon-facebook footer-contacts-facebook"></span>
+      <a href="https://instagram.com/energizes_team/" target="_blank">
+        <span class="icon icon-instagram footer-contacts-instagram"></span>
+      </a>
+      <button class="footer-contacts-button">Связаться с нами</button>
+    </shared-spoiler>
+  </div></div>
+  <div class="footer-contacts-right"><div class="footer-contacts-container">
+    <div
+      class="footer-contacts-spoiler-button"
+      (click)="onToggleSpoiler()"
+    >
+      <div class="headline">
+        <span>Вакансии</span>
+        <div class="icon icon-spoiler footer-contacts-right-icon-spoiler {{ toggleSpoiler }}"></div>
+      </div>
+    </div>
+    <shared-spoiler [spoilerState]="toggleSpoiler" >
+      <div class="footer-contacts-right-text">
+        Если Вы творческий человек и Вам есть что предложить<br>рынку, отправляйте свои работы:
+      </div>
+      <div class="footer-contacts-email">
+        <a href="mailto:email@gmail.com">
+          <div class="icon icon-mail footer-contacts-icon-mail"></div>
+          <div class="address_content">start@energizes.ru</div>
+        </a>
+      </div>
+    </shared-spoiler>
+  </div></div>
+  <div style="clear:both;"></div>
+</div>

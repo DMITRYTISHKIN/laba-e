@@ -1,1 +1,213 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansBold/OpenSansBold.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansBold/OpenSansBold.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansBold/OpenSansBold.woff) format("woff");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff) format("woff");
+
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansExtraBold/OpenSansExtraBold.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansExtraBold/OpenSansExtraBold.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansExtraBold/OpenSansExtraBold.woff) format("woff");
+
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff) format("woff");
+
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansItalic/OpenSansItalic.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansItalic/OpenSansItalic.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansItalic/OpenSansItalic.woff) format("woff");
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansLight/OpenSansLight.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansLight/OpenSansLight.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansLight/OpenSansLight.woff) format("woff");
+
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansLightItalic/OpenSansLightItalic.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansLightItalic/OpenSansLightItalic.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansLightItalic/OpenSansLightItalic.woff) format("woff");
+
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansRegular/OpenSansRegular.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansRegular/OpenSansRegular.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansRegular/OpenSansRegular.woff) format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff) format("woff");
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansSemiBold/OpenSansSemiBold.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansSemiBold/OpenSansSemiBold.woff) format("woff");
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot);
+  src: local(OpenSans),
+  url(./assets/fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf) format("truetype"),
+  url(./assets/fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff) format("woff");
+
+  font-weight: 600;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  min-width: 1180px;
+  font-family: OpenSans;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon.icon-logo {
+  background-image: url(./assets/images/logo.png);
+}
+
+.icon.icon-me {
+  background-image: url(./assets/images/logo_me.png);
+}
+
+.icon.icon-phone {
+  background-image: url(./assets/images/contacts/phone.png);
+}
+
+.icon.icon-mail{
+  background-image: url(./assets/images/contacts/mail.png);
+}
+
+.icon.icon-facebook{
+  background-image: url(./assets/images/contacts/fb.png);
+}
+
+.icon.icon-instagram{
+  background-image: url(./assets/images/contacts/insta.png);
+}
+
+.icon.icon-address{
+  background-image: url(./assets/images/contacts/address.png);
+}
+
+.icon-spoiler {
+  background-image: url(./assets/images/down.png);
+  transition: 0.3s;
+}
+
+.icon-spoiler.active {
+  transform: rotate(180deg);
+}
+
+.background-notebook {
+  background: url(./assets/images/notebook.jpg) no-repeat #f6f6f7;
+  background-position: right;
+  background-size: contain;
+}
+
+.headline span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 0;
+  margin-bottom: 24px;
+  line-height: 25px;
+  color: #444;
+}
+
+.headline.border span {
+  border-bottom: 4px #D9B7D2 solid;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 1180px;
+  margin: 0 auto;
+}

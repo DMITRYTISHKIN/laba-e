@@ -1,0 +1,27 @@
+.header-details {
+  text-align: center;
+  background-color: rgb(236, 213, 229);
+  padding: 35px 0;
+}
+
+.header-details-button {
+  border-radius: 0px;
+  border: none;
+  padding: 13px 65px;
+  color: white;
+  background-color: rgb(210, 166, 193);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.header-details-button:hover {
+  background-color: #ce91e5;
+}
+
+.header-details-button:active {
+  color: gray;
+  border: gray solid 3px;
+  padding: 10px 62px;
+}
