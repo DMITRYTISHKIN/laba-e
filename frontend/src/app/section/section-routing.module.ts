@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SectionComponent } from './section.component';
 
 const routes: Routes = [
-  { path: '', component: SectionComponent },
+  { path: ':job', component: SectionComponent },
+  { path: ':job/sub/:sub', component: SectionComponent },
 ];
 
 

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/section', pathMatch: 'full' },
+  { path: '', redirectTo: '/section/1', pathMatch: 'full' },
   { path: 'section', loadChildren: './section/section.module#SectionModule' },
   { path: 'project', loadChildren: './project/project.module#ProjectModule' },
 ];

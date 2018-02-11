@@ -25,3 +25,24 @@
   border: gray solid 3px;
   padding: 10px 62px;
 }
+
+.footer-modal-content p {
+  color: gray;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.footer-modal-content div {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.footer-modal-content span {
+  float: left;
+  margin-right: 15px;
+  font-size: 30px;
+  color: #f2e4e7;
+  font-weight: 600;
+  line-height: 25px;
+}
+

@@ -1,0 +1,13 @@
+<div
+  class="section-nav-sub"
+>
+  <span
+    class="section-nav-sub-item {{ all ? 'current' : '' }}"
+    [routerLink]="getAll()"
+  >Все проекты</span>
+  <span
+    *ngFor="let section of sections"
+    class="section-nav-sub-item {{ section.ACTIVE ? 'current' : '' }}"
+    [routerLink]="['/section/' + section.JOB_ID + '/sub/' + section.SECTION_ID]"
+  >{{ section.NAME }} <i>({{ section.PROJECTS_COUNT }})</i></span>
+</div>

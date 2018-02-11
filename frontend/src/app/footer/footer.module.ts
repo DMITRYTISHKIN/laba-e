@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { NgxSmartModalModule, NgxSmartModalService } from 'ngx-smart-modal';
 import { SpoilerModule } from '@shared/spoiler';
 
 import { FooterComponent } from './footer.component';
@@ -12,7 +13,8 @@ import { FooterCopyrightComponent } from './components/footer-copyright/footer-c
 @NgModule({
   imports: [
     CommonModule,
-    SpoilerModule
+    SpoilerModule,
+    NgxSmartModalModule.forRoot()
   ],
   exports: [
     FooterComponent
@@ -22,6 +24,9 @@ import { FooterCopyrightComponent } from './components/footer-copyright/footer-c
     FooterDetailsComponent,
     FooterContactsComponent,
     FooterCopyrightComponent
+  ],
+  providers: [
+    NgxSmartModalService
   ]
 })
 export class FooterModule { }

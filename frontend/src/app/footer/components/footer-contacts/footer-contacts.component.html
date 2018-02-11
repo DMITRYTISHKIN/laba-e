@@ -35,7 +35,10 @@
       <a href="https://instagram.com/energizes_team/" target="_blank">
         <span class="icon icon-instagram footer-contacts-instagram"></span>
       </a>
-      <button class="footer-contacts-button">Связаться с нами</button>
+      <button
+        (click)="modal.getModal('modalMore').open()"
+        class="footer-contacts-button"
+      >Связаться с нами</button>
     </shared-spoiler>
   </div></div>
   <div class="footer-contacts-right"><div class="footer-contacts-container">

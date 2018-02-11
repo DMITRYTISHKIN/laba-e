@@ -1,0 +1,24 @@
+.section-nav-sub {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.section-nav-sub-item {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 13px;
+  user-select: none;
+}
+
+.section-nav-sub-item i {
+  color: #939393;
+  font-style: normal;
+}
+
+.section-nav-sub-item.current {
+  border: 2px #D9B7D2 solid;
+  padding: 5px 13px;
+}

@@ -1,0 +1,7 @@
+<div class="section-nav">
+  <button
+    *ngFor="let section of sections"
+    class="section-nav-button {{ section.ACTIVE ? 'current' : '' }}"
+    [routerLink]="['/section/' + section.JOB_ID]"
+  >{{ section.NAME }}</button>
+</div>

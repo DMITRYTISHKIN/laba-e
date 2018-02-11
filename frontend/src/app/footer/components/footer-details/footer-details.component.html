@@ -1,8 +1,25 @@
+<ngx-smart-modal
+  #modalMore
+  identifier="modalMore"
+  [customClass]="'footer-modal'"
+>
+  <div class="footer-modal-title headline border">
+    <span>Как работает наш сайт</span>
+  </div>
+  <div class="footer-modal-content">
+    <p>На сайте представлены работы исполнителей Творческого фонда Energizes.</p>
+    <div><span>1</span> Выберете понравившейся вам артикул (работу) в нужной для Вас категории.</div>
+    <div><span>2</span> Позвоните по тел. +7(499) 393-33-71 и сообщите их менеджеру.</div>
+    <div><span>3</span> Узнайте цену и сделайте заказ.</div>
+  </div>
+</ngx-smart-modal>
 <div class="header-details">
   <div class="header-details-content content">
     <div class="headline">
       <span>Как работает наш сайт?</span>
     </div>
-    <button class="header-details-button">Подробнее</button>
+    <button
+      (click)="modal.getModal('modalMore').open()"
+      class="header-details-button">Подробнее</button>
   </div>
 </div>

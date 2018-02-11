@@ -211,3 +211,26 @@ a {
   width: 1180px;
   margin: 0 auto;
 }
+
+.dialog.footer-modal {
+  max-width: 775px !important;
+  padding: 35px 70px !important;
+}
+
+.dialog.footer-modal .dialog__close-btn {
+  background: url(./assets/images/close.png) no-repeat;
+  background-size: 10px;
+  background-position: center;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px #ccc solid;
+  border-radius: 50%;
+}
+
+.dialog.footer-modal .dialog__close-btn img {
+  display: none;
+}

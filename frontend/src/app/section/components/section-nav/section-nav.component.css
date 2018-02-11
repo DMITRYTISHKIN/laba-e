@@ -1,0 +1,26 @@
+.section-nav {
+  border-bottom: 1px #eee solid;
+  padding-bottom: 17px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-nav-button.current {
+  background-color: #D9B7D2;
+  color: white;
+}
+
+.section-nav-button {
+  border-radius: 0px;
+  border: none;
+  padding: 8px 35px;
+  color: #D9B7D2;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  border: 2px #D9B7D2 solid;
+  margin: 0 15px;
+}
