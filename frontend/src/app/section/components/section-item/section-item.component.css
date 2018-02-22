@@ -1,0 +1,52 @@
+.section-nav-item-container {
+  overflow: hidden;
+}
+
+.section-nav-item {
+  margin: 0;
+  padding: 0;
+  width: 380px;
+  float: left;
+}
+
+.section-nav-item-preview {
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 0;
+  height: 300px;
+  position: relative;
+}
+
+.section-nav-item-vendor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+  padding: 0 10px;
+  border-radius: 7px 0 0 0;
+  visibility: hidden;
+}
+
+.section-nav-item-section {
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 40px;
+  width: 100%;
+}
+
+.section-nav-item-name {
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+}

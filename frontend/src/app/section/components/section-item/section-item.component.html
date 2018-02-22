@@ -1,22 +1,20 @@
-<div class="projects">
-  <div class="content">
-    <div class="headline border">
-      <span>Наши проекты</span>
-    </div>
-    <ul id="projectsContainer">
-      <li class="project" *ngFor="let project of projects">
-        <a [routerLink]="['/project/' + project.PROJECT_ID]">
-          <div height="{{ project.HEIGHT_IMAGE }}" class="preview">
-            <img src="{{ project.PREVIEW_IMAGE }}" width="100%" alt="">
-            <span class="project-vendorCode">{{ project.VENDOR_CODE }}</span>
-          </div>
-          <div class="name_section">{{ project.NAME_SECTION }}</div>
-          <div class="name_project">{{ project.NAME }}</div>
-        </a>
-      </li>
-    </ul>
-    <!-- <div value="" class="pagination_container">
-      <div class="pagination_block light-theme simple-pagination" style="display: none;"><ul><li class="disabled"><span class="current prev">Prev</span></li><li class="active"><span class="current">1</span></li><li class="disabled"><span class="current next">Next</span></li></ul></div>
-    </div> -->
+<div class="content">
+  <div class="headline border">
+    <span>Наши проекты</span>
   </div>
+  <div class="section-nav-item-container">
+    <span class="section-nav-item" *ngFor="let project of projects">
+      <a [routerLink]="['/project/' + project.PROJECT_ID]">
+        <div [style.height.px]="project.HEIGHT_IMAGE || 300" class="section-nav-item-preview">
+          <img src="http://laba-e.ru{{ project.PREVIEW_IMAGE }}" width="100%" alt="">
+          <span class="section-nav-item-vendor">{{ project.VENDOR_CODE }}</span>
+        </div>
+        <div class="section-nav-item-section">{{ project.NAME_SECTION }}</div>
+        <div class="section-nav-item-name">{{ project.NAME }}</div>
+      </a>
+    </span>
+  </div>
+  <!-- <div value="" class="pagination_container">
+    <div class="pagination_block light-theme simple-pagination" style="display: none;"><ul><li class="disabled"><span class="current prev">Prev</span></li><li class="active"><span class="current">1</span></li><li class="disabled"><span class="current next">Next</span></li></ul></div>
+  </div> -->
 </div>

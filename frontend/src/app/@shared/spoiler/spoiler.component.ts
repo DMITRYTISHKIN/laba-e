@@ -13,7 +13,7 @@ import { trigger,style,transition,animate,state } from '@angular/animations';
         display: 'none'
       })),
       state('active', style({
-        
+
       })),
       transition('inactive => active', animate('300ms ease-in')),
       transition('active => inactive', animate('300ms ease-out'))

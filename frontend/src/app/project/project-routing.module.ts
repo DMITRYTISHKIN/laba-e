@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {ModuleWithProviders} from '@angular/core';
 
 import { ProjectComponent } from './project.component';
 

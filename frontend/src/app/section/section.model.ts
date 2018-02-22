@@ -5,3 +5,13 @@ export interface subSection {
   NAME: string,
   ACTIVE: boolean
 }
+
+export interface sectionItem {
+  NAME_SECTION: string,
+  SECTION_ID: string,
+  PROJECT_ID: string,
+  NAME: string,
+  PREVIEW_IMAGE: string,
+  VENDOR_CODE: string,
+  HEIGHT_IMAGE: string
+}
