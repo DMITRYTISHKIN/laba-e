@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { PaginatorModule } from '@shared/paginator';
+
 import { SectionComponent } from './section.component';
 import { SectionNavComponent } from './components/section-nav/section-nav.component';
 import { SectionNavSubComponent } from './components/section-nav-sub/section-nav-sub.component';
@@ -11,7 +13,8 @@ import { SectionService } from './section.service';
 @NgModule({
   imports: [
     CommonModule,
-    SectionRoutingModule
+    SectionRoutingModule,
+    PaginatorModule
   ],
   declarations: [
     SectionComponent,

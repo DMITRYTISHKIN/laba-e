@@ -2,10 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse, HttpParams } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, Subject } from 'rxjs';
 
 import { subSection, sectionItem } from './section.model';
-import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class SectionService {

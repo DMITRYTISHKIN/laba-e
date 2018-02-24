@@ -3,7 +3,10 @@
     <span>Наши проекты</span>
   </div>
   <div class="section-nav-item-container">
-    <span class="section-nav-item" *ngFor="let project of projects">
+    <span
+      class="section-nav-item"
+      *ngFor="let project of projects"
+    >
       <a [routerLink]="['/project/' + project.PROJECT_ID]">
         <div [style.height.px]="project.HEIGHT_IMAGE || 300" class="section-nav-item-preview">
           <img src="http://laba-e.ru{{ project.PREVIEW_IMAGE }}" width="100%" alt="">
@@ -14,7 +17,10 @@
       </a>
     </span>
   </div>
-  <!-- <div value="" class="pagination_container">
-    <div class="pagination_block light-theme simple-pagination" style="display: none;"><ul><li class="disabled"><span class="current prev">Prev</span></li><li class="active"><span class="current">1</span></li><li class="disabled"><span class="current next">Next</span></li></ul></div>
-  </div> -->
 </div>
+<shared-paginator
+  [perPage]="9"
+  [currentPage]="1"
+  [totalCount]="1000"
+  (changePage)="onChangePage($events)"
+></shared-paginator>
