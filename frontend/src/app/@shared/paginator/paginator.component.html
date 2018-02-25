@@ -22,7 +22,7 @@
     >{{ page }}</button>
     <span
       *ngIf="currentPage > middleValue"
-      class="paginator-dotters"
+      class="paginator-dots"
       [paginatorDots]="leftDots"
       [onSelectPage]="onSelectPage"
     >...</span>
@@ -34,7 +34,7 @@
     >{{ page }}</button>
     <span
       *ngIf="currentPage < countPages - middleValue + 1"
-      class="paginator-dotters"
+      class="paginator-dots"
       [paginatorDots]="rightDots"
       [onSelectPage]="onSelectPage"
     >...</span>

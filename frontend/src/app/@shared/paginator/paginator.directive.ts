@@ -22,7 +22,7 @@ export class PaginatorDirective implements OnInit {
     this.el.nativeElement.innerHTML = '';
     this.el.nativeElement.appendChild(this.select);
 
-    this.select.addEventListener('change', this.onChange.bind(this), option);
+    this._listener = this.renderer.listen(this.select, 'change', this.onChange.bind(this));
     this._active = true;
   }
 
@@ -31,7 +31,8 @@ export class PaginatorDirective implements OnInit {
 
   public select: HTMLSelectElement;
 
-  private _active: boolean = false
+  private _active: boolean = false;
+  private _listener: () => void;
   private readonly _defaultValue: string = '-';
 
   constructor(
@@ -54,6 +55,7 @@ export class PaginatorDirective implements OnInit {
 
     this._active = false;
     this.el.nativeElement.innerHTML = '...';
+    this._listener();
   }
 
   /**
